@@ -62,11 +62,6 @@ export default {
   background-color: var(--light-navy);
   box-shadow: var(--slate) 1px 2px 2px;
   transition: var(--transition);
-
-  &:hover {
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0.001, 0, 0, 1, 0, 0, 0, 0, 1);
-    box-shadow: var(--slate) 10px 20px 5px;
-  }
 }
 
 .title {
