@@ -37,7 +37,7 @@ export default Vue.extend({
 
 .image {
   background-position: center;
-  background-image: url('/assets/illustration.png');
+  background-image: url('~assets/illustration.png');
   background-size: 40vw;
   width: 40vw;
   height: 40vw;
