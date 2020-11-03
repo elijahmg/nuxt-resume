@@ -2,6 +2,10 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
+  router: {
+    base: '/nuxt-resume/',
+  },
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'Ilya Fakhrutdinov',
@@ -16,19 +20,11 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Oswald',
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Ubuntu',
-      },
     ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['@/assets/global.css'],
+  css: ['@/assets/global.scss'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
