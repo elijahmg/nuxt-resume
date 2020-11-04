@@ -18,7 +18,9 @@ export default {
         content: 'Ilya Fakhrutdinov, Software Engineer based in Prague',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/nuxt-resume/favicon.ico' },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

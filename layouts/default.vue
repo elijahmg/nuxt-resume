@@ -14,6 +14,7 @@ import Header from '../components/global/Header';
 
 export default {
   components: { RightSideBar, LeftLinkList, Header },
+  middleware: ['user-agent'], // set user agent to vuex store
 };
 </script>
 <style></style>

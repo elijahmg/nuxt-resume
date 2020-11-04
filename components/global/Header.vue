@@ -26,17 +26,19 @@ export default {
   components: { HamMenu, PersonalLogo, Link },
   data() {
     return {
-      show: true,
+      show: !this.$store.state.isMobile,
     };
   },
   beforeMount() {
-    this.show = window.innerWidth > 768;
-    window.addEventListener('resize', (e) => {
-      this.show = e.target.innerWidth > 768;
+    window.addEventListener('resize', () => {
+      this.show = window.innerWidth > 768;
     });
   },
   destroyed() {
-    window.removeEventListener('resize', () => null);
+    window.removeEventListener(
+      'resize',
+      () => (this.show = window.innerWidth > 768),
+    );
   },
 };
 </script>

@@ -154,8 +154,7 @@ img {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 6rem 0 0;
+  margin: 2rem 0 0;
 
   @media (min-width: 766px) {
     display: none;
@@ -164,7 +163,6 @@ img {
 
 .tech-card {
   margin-top: 3rem;
-  text-align: center;
 
   ul {
     display: grid;

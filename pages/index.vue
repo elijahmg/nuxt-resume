@@ -37,7 +37,7 @@ export default Vue.extend({
 
 .image {
   background-position: center;
-  background-image: url('~assets/illustration.png');
+  background-image: url('~assets/pic.png');
   background-size: 40vw;
   width: 40vw;
   height: 40vw;
@@ -48,8 +48,8 @@ export default Vue.extend({
   margin: 4rem 0 0 2rem;
 
   @media (max-width: 768px) {
-    margin: 9rem 0 0;
-    z-index: 1;
+    margin: 2rem 0 0;
+    z-index: -1;
   }
 }
 </style>
