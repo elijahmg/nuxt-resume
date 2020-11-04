@@ -3,7 +3,6 @@ export default {
   target: 'server',
 
   router: {
-    base: '/nuxt-resume/',
     middleware: ['user-agent'], // set user agent to vuex store
   },
 
@@ -19,9 +18,7 @@ export default {
         content: 'Ilya Fakhrutdinov, Software Engineer based in Prague',
       },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/nuxt-resume/favicon.ico' },
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
