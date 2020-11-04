@@ -41,7 +41,7 @@
         </ul>
         <ul v-show="content === 'love'">
           <li><img src="@/assets/vue.png" width="100" height="100" /></li>
-          <li><img src="@/assets/nuxtjs.png" width="100" height="100" /></li>
+          <li><img src="@/assets/Nuxtjs.png" width="100" height="100" /></li>
           <li><img src="@/assets/kotlin.png" width="125" height="125" /></li>
           <li><img src="@/assets/elixir.png" width="210" height="210" /></li>
         </ul>
