@@ -1,9 +1,10 @@
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
-  target: 'static',
+  target: 'server',
 
   router: {
     base: '/nuxt-resume/',
+    middleware: ['user-agent'], // set user agent to vuex store
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)

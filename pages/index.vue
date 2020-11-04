@@ -46,6 +46,7 @@ export default Vue.extend({
 
 .personal-message {
   margin: 4rem 0 0 2rem;
+  z-index: 20;
 
   @media (max-width: 768px) {
     margin: 2rem 0 0;

@@ -62,7 +62,6 @@ h1 {
 
 .text-wrapper {
   position: static;
-  z-index: 20;
 
   @media (min-width: 1024px) {
     position: absolute;

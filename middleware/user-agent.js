@@ -1,13 +1,9 @@
-export default function (ctx) {
+export default function ({ req, store }) {
   // Use user agent to find out device
-  const req = ctx.ssrContext.req;
-  let userAgent = '';
 
-  if (req) {
-    const userAgent = process.server
-      ? req.headers['user-agent']
-      : navigator.userAgent;
-  }
+  const userAgent = process.server
+    ? req.headers['user-agent']
+    : navigator.userAgent;
 
-  ctx.store.commit('toggleIsMobile', !!userAgent.match(/Android|iPhone/g));
+  store.commit('toggleIsMobile', !!userAgent.match(/Android|iPhone/g));
 }
