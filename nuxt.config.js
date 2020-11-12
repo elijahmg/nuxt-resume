@@ -17,6 +17,10 @@ export default {
         name: 'description',
         content: 'Ilya Fakhrutdinov, Software Engineer based in Prague',
       },
+      {
+        name: 'google-site-verification',
+        content: 'fJmQ4PnN8_WkxucrvzBZSusviADmRex8wmIH2S0czXc',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
