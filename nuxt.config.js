@@ -1,10 +1,8 @@
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
-  target: 'server',
+  target: 'static',
 
-  router: {
-    middleware: ['user-agent'], // set user agent to vuex store
-  },
+  router: {},
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {

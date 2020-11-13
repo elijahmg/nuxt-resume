@@ -26,7 +26,7 @@ export default {
   components: { HamMenu, PersonalLogo, Link },
   data() {
     return {
-      show: !this.$store.state.isMobile,
+      show: false,
     };
   },
   beforeMount() {
