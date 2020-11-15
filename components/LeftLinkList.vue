@@ -2,12 +2,12 @@
   <div class="side-wrapper list">
     <ul>
       <li>
-        <a>
+        <a href="https://github.com/elijahmg" target="_blank">
           <GitHubIcon />
         </a>
       </li>
       <li>
-        <a>
+        <a href="https://www.linkedin.com/in/ilya-fakhrutdinov-b01aa5b4/" target="_blank">
           <LinkdinIcon />
         </a>
       </li>
