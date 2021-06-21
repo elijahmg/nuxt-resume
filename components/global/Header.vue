@@ -1,17 +1,12 @@
 <template>
   <div class="flex justify-between">
-    <PersonalLogo class="logo" />
+    <PersonalLogo class="logo"/>
     <div class="nav">
-      <button class="menu-button" @click="show = !show">
-        <HamMenu :isMenuDisplayed="show" />
-      </button>
-      <transition name="fade">
-        <div v-if="show" class="navigation-block">
-          <Link hrf="/"> Home</Link>
-          <Link hrf="/tech"> Tech</Link>
-          <Link hrf="/experience"> Experience</Link>
-        </div>
-      </transition>
+      <div class="navigation-block">
+        <Link hrf="/"> Home</Link>
+        <Link hrf="/tech"> Tech</Link>
+        <Link hrf="/experience"> Experience</Link>
+      </div>
     </div>
   </div>
 </template>
@@ -24,22 +19,6 @@ import HamMenu from '@/components/HamMenu';
 export default {
   name: 'Header',
   components: { HamMenu, PersonalLogo, Link },
-  data() {
-    return {
-      show: false,
-    };
-  },
-  beforeMount() {
-    window.addEventListener('resize', () => {
-      this.show = window.innerWidth > 768;
-    });
-  },
-  destroyed() {
-    window.removeEventListener(
-      'resize',
-      () => (this.show = window.innerWidth > 768),
-    );
-  },
 };
 </script>
 
@@ -82,20 +61,6 @@ header {
   .nav a {
     display: block;
     text-align: right;
-  }
-
-  .menu-button {
-    display: block;
-  }
-
-  .navigation-block {
-    background-color: rgba(10, 25, 47, 0.85);
-    position: absolute;
-    top: 96px;
-    z-index: 10;
-    width: 100%;
-    backdrop-filter: blur(10px);
-    filter: none !important;
   }
 }
 </style>

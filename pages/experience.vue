@@ -3,8 +3,18 @@
     <div class="wrapper">
       <Card
         class="m-3"
+        title="Sinnerschrader"
+        date="2021 (February) - present"
+        place="Prague, Czech Republic"
+        position="Software engineer"
+        :tags="['ReactJS', 'TypeScript', 'AWS', 'AEM']"
+      >
+        Developing web tools
+      </Card>
+      <Card
+        class="m-3"
         title="CN Group"
-        date="2020 (May) - present"
+        date="2020 (May) - 2021 (February)"
         place="Prague, Czech Republic"
         position="Software engineer"
         :tags="['ReactJS', 'TypeScript', 'Apollo', 'NextJS', 'GraphQL', 'Jest']"
